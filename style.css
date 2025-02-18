@@ -1,22 +1,39 @@
-body{
-    display: flex;
-    flex-direction: column;
-}
 header{
     background-color: #fff8e7;
 }
 
 
 /* Mobil */
-@media screen and (max-width: 767){
-    
+@media screen and (max-width: 767px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+    #rubrik{
+        margin: auto;
+        margin-right: 20%;
+    }
     #logga{
         display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 /* Laptop */
+@media screen and (min-width: 767px){
 
+}
 
 
 /* Dator */
