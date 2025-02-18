@@ -1,5 +1,14 @@
+body{
+    margin: 0;
+}
+
 header{
     background-color: #fff8e7;
+    border: solid black;
+}
+
+main{
+    background-image: linear-gradient(#FF4427, #652D2D);
 }
 
 
@@ -16,7 +25,7 @@ header{
         justify-content: center;
         height: 10vh;
     }
-    #rubrik{
+    #butiknamn{
         margin: auto;
         margin-right: 20%;
     }
