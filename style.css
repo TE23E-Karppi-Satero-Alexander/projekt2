@@ -11,6 +11,17 @@ main{
     background-image: linear-gradient(#FF4427, #652D2D);
 }
 
+footer{
+    color: white;
+    background: #5F2121;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.produkt{
+    background: white;
+}
 
 /* Mobil */
 @media screen and (max-width: 767px){
@@ -36,6 +47,15 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 75vh;
+        overflow-y: scroll;
+    }
+    .produkt{
+        width: 70vw;
+        height: 100px;
+    }
+    footer{
+        height: 15vh;
     }
 }
 
