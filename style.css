@@ -2,6 +2,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: "inter", sans-serif;
 }
 
 header{
@@ -12,6 +13,15 @@ header{
     border: solid black;
 }
 
+#kundvagn{
+    height: 70%;
+    width: 10%;
+    border: hidden;
+    background-image: url(./img/Kundvagn.webp);
+    background-size: cover;
+    background-color: #fff8e7;
+}
+
 main{
     background-image: linear-gradient(#FF4427, #652D2D);
 }
@@ -19,7 +29,6 @@ main{
 footer{
     color: white;
     background: #5F2121;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -59,14 +68,14 @@ footer{
 }
 
 /* Laptop */
-@media screen and (min-width: 767px)and (max-width: 1079px){
+@media screen and (min-width: 767px)and (max-width: 1023px){
     header{
         justify-content: space-evenly;
     }
     main{
         height: 65vh;
         display: grid;
-        grid-template-columns: 40vh 40vh;
+        grid-template-columns: 40vw 40vw;
         grid-template-rows: 33vh 33vh 33vh;
         gap: 10px;
         justify-content: space-evenly;
@@ -81,3 +90,18 @@ footer{
 
 
 /* Dator */
+@media screen and (min-width: 1024px) {
+    header{
+        height: 20vh;
+        justify-content: space-evenly;
+    }
+    main{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-template-rows: 25vh 25vh;
+        gap: 4%;
+        align-content: center;
+        justify-content: center;
+    }
+}
