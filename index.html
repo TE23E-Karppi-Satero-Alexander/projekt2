@@ -15,7 +15,7 @@
     <header>
         <img id="logga" src="./img/Skärmbild 2023-10-10 132134.png" alt="Butikens logga, en gitarr">
         <h1 id="butiknamn"> Gitarrbutik</h1>
-        <button id="kundvagn"></button>
+        <button id="visa_varukorg" onclick="visaVarukorg()"></button>
     </header>
     <main>
         <div class="produkt">
@@ -62,5 +62,10 @@
             <p>Kontakta oss</p>
         </nav>
     </footer>
+    <div id="varukorg_div">
+        <h2 >Varukorg</h2>
+        <ul id="varukorg_produkter"></ul>
+        <button id="varukorg_stäng" onclick="gömVarukorg()">X</button>
+    </div>
 </body>
 </html>
