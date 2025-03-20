@@ -74,3 +74,18 @@ function laddatSidan(){
     }
     summa_pris_element.textContent = "Total pris: " + summa_pris + " kr";
 }
+
+function tömVarukorg(){
+
+    for (let i = 0; i < varukorg.length; i++) {
+        document.querySelector("li").remove();
+    }
+    
+    summa_pris = 0;
+
+    varukorg = [];
+    jsonVarukorg = JSON.stringify(varukorg);
+    window.localStorage.setItem(varukorg_nyckel, jsonVarukorg);
+
+    laddatSidan();
+}
