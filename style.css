@@ -16,7 +16,7 @@ header{
 #visa_varukorg{
     height: 70%;
     width: 10%;
-    margin-top:4% ;
+    margin-top:1% ;
     border: hidden;
     background-image: url(./img/Kundvagn.webp);
     background-size: contain;
@@ -25,6 +25,7 @@ header{
 }
 
 #varukorg_div{
+    text-align: center;
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -36,6 +37,9 @@ header{
     border-radius: 2%;
     background-color: aliceblue;
 }
+#varukorg_ul{
+    text-align: left;
+}
 
 #vaurkorg_produkter{
     border: solid black;
@@ -46,15 +50,31 @@ header{
     width: 20%;
 }
 
+#varukorg_töm{
+    margin-bottom:5% ;
+}
+
 main{
     background-image: linear-gradient(#FF4427, #652D2D);
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
     color: white;
     background: #5F2121;
     bottom: 0;
     width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+a{
+    margin: 2%;
 }
 
 .produkt{
@@ -71,7 +91,8 @@ footer{
     }
     #butiknamn{
         margin: auto;
-        margin-right: 20%;
+        margin-right: 27%;
+        font-size: 2rem;
     }
     #logga{
         display: none;
@@ -90,12 +111,20 @@ footer{
     footer{
         height: 15vh;
     }
+    #varukorg_div{
+        margin-left: 60%;
+        width: 40%; 
+    }
 }
 
 /* Laptop */
 @media screen and (min-width: 767px)and (max-width: 1023px){
     header{
         justify-content: space-evenly;
+        height: 20vh;
+    }
+    #butiknamn{
+        font-size: 3rem;
     }
     main{
         height: 65vh;
@@ -114,7 +143,9 @@ footer{
     #visa_varukorg
     {
         height: 100px;
-
+    }
+    footer{
+        height: 15vh;
     }
 }
 
@@ -125,6 +156,9 @@ footer{
         height: 20vh;
         justify-content: space-evenly;
     }
+    #butiknamn{
+        font-size: 4rem;
+    }
     main{
         height: 60vh;
         display: grid;
@@ -133,5 +167,8 @@ footer{
         gap: 4%;
         align-content: center;
         justify-content: center;
+    }
+    footer{
+        height: 20vh;
     }
 }

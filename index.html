@@ -11,7 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
 </head>
-<body>
+<body onload="laddatSidan()">
     <header>
         <img id="logga" src="./img/Skärmbild 2023-10-10 132134.png" alt="Butikens logga, en gitarr">
         <h1 id="butiknamn"> Gitarrbutik</h1>
@@ -20,51 +20,52 @@
     <main>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp1" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">1000 kr</p>
+            <button onclick="läggTillIVarukorg('A', 1000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp2" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">2000 kr</p>
+            <button onclick="läggTillIVarukorg('B', 2000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp3" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">3000 kr</p>
+            <button onclick="läggTillIVarukorg('A', 3000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp4" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">4000 kr</p>
+            <button onclick="läggTillIVarukorg('D', 4000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp5" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">5000 kr</p>
+            <button onclick="läggTillIVarukorg('E', 5000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
             <img src="" alt="">
-            <p class="produkt_beskrivning">mmm</p>
-            <p class="pris">0$</p>
-            <button id="köp6" class="köp_knapp">Köp</button>
+            <p class="namn">A</p>
+            <p class="pris">6000 kr</p>
+            <button onclick="läggTillIVarukorg('F', 6000)" class="köp_knapp">Köp</button>
         </div>
     </main>
     <footer>
         <nav id="länkar">
-            <p>Information</p>
-            <p>Om oss</p>
-            <p>Kontakta oss</p>
+            <a href="https://crouton.net/">Information</a>
+            <a href="https://crouton.net/">Om oss</a>
+            <a href="https://crouton.net/">Kontakta oss</a>
         </nav>
     </footer>
     <div id="varukorg_div">
         <h2 >Varukorg</h2>
-        <ul id="varukorg_produkter"></ul>
+        <ul id="varukorg_ul"></ul>
+        <p id="summa_pris">Total pris: </p>
         <button id="varukorg_stäng" onclick="gömVarukorg()">X</button>
     </div>
 </body>
