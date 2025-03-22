@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En onlineshop som säljer olika typer av gitarerr för rimliga priser">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
@@ -13,46 +14,46 @@
 </head>
 <body onload="laddatSidan()">
     <header>
-        <img id="logga" src="./img/Skärmbild 2023-10-10 132134.png" alt="Butikens logga, en gitarr">
+        <img id="logga" src="./img/Logotyp.webp" alt="Butikens logga, ett skelett med en gitarr">
         <h1 id="butiknamn"> Gitarrbutik</h1>
-        <button id="visa_varukorg" onclick="visaVarukorg()"></button>
+        <button aria-label="Visa varukorg" id="visa_varukorg" onclick="visaVarukorg()"></button>
     </header>
     <main>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
-            <p class="pris">1000 kr</p>
-            <button onclick="läggTillIVarukorg('A', 1000)" class="köp_knapp">Köp</button>
+            <img class="produkt_bild" src="./img/gitarr1.webp" alt="En gitarr">
+            <p class="namn">Allmän elgitarr</p>
+            <p class="pris">10000 kr</p>
+            <button onclick="läggTillIVarukorg('Allmän elgitarr', 10000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
-            <p class="pris">2000 kr</p>
-            <button onclick="läggTillIVarukorg('B', 2000)" class="köp_knapp">Köp</button>
+            <img class="produkt_bild" src="./img/gitarr2.webp" alt="En gitarr">
+            <p class="namn">En annan elgitarr</p>
+            <p class="pris">3500 kr</p>
+            <button onclick="läggTillIVarukorg('En annan elgitarr', 3500)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
-            <p class="pris">3000 kr</p>
-            <button onclick="läggTillIVarukorg('A', 3000)" class="köp_knapp">Köp</button>
+            <img class="produkt_bild" src="./img/gitarr3.webp" alt="En gitarr">
+            <p class="namn">Ännu en elgitarr</p>
+            <p class="pris">2350 kr</p>
+            <button onclick="läggTillIVarukorg('Ännu en elgitarr', 2350)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
-            <p class="pris">4000 kr</p>
-            <button onclick="läggTillIVarukorg('D', 4000)" class="köp_knapp">Köp</button>
+            <img class="produkt_bild" src="./img/gitarr4.webp" alt="En gitarr">
+            <p class="namn">En akustisk gitarr</p>
+            <p class="pris">7000 kr</p>
+            <button onclick="läggTillIVarukorg('En akustisk gitarr', 7000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
+            <img class="produkt_bild" src="./img/gitarr5.webp" alt="En gitarr">
+            <p class="namn">Akustisk gitarr 2</p>
             <p class="pris">5000 kr</p>
-            <button onclick="läggTillIVarukorg('E', 5000)" class="köp_knapp">Köp</button>
+            <button onclick="läggTillIVarukorg('Akustisk gitarr 2', 5000)" class="köp_knapp">Köp</button>
         </div>
         <div class="produkt">
-            <img src="" alt="">
-            <p class="namn">A</p>
-            <p class="pris">6000 kr</p>
-            <button onclick="läggTillIVarukorg('F', 6000)" class="köp_knapp">Köp</button>
+            <img class="produkt_bild" src="./img/gitarr6.webp" alt="En gitarr">
+            <p class="namn">En sista gitarr</p>
+            <p class="pris">9238 kr</p>
+            <button onclick="läggTillIVarukorg('En sista gitarr', 9238)" class="köp_knapp">Köp</button>
         </div>
     </main>
     <footer>

@@ -13,6 +13,10 @@ header{
     border: solid black;
 }
 
+#logga{
+    height: 100%;
+}
+
 #visa_varukorg{
     height: 70%;
     width: 10%;
@@ -38,6 +42,9 @@ header{
     background-color: aliceblue;
 }
 #varukorg_ul{
+    max-height: 60vh;
+    overflow: scroll;
+    scrollbar-width: none;
     text-align: left;
 }
 
@@ -59,6 +66,28 @@ main{
     background-image: linear-gradient(#FF4427, #652D2D);
 }
 
+.produkt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    border-radius: 3%;
+}
+
+.produkt_bild{
+    height: 100%;
+    width: fit-content;
+}
+.pris{
+    margin: 1%;
+    align-self: center;
+}
+.namn{
+    margin: 1%;
+    align-self: center;
+}
+
+
 footer{
     display: flex;
     flex-direction: row;
@@ -72,16 +101,16 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 a{
     margin: 2%;
+    margin-left: 10%;
+    padding: 10%;
+    color: white;
 }
 
-.produkt{
-    background: white;
-    border-radius: 3%;
-}
 
 
 /* Mobil */
